@@ -155,7 +155,7 @@ var searchData=
   ['epin_5fbuf_152',['epin_buf',['../structhidd__interface__t.html#a9211b15924afadea592af2e58db6d3ec',1,'hidd_interface_t::epin_buf()'],['../structhidh__interface__t.html#adbbaa6de6d79b059a08d76487b043bb8',1,'hidh_interface_t::epin_buf()'],['../structmidid__interface__t.html#a55ea6b7bd11a2029c1172d36549e2a0e',1,'midid_interface_t::epin_buf()'],['../structvendord__interface__t.html#a56c2c3ddf60aff62edea1989d9d86fe0',1,'vendord_interface_t::epin_buf()']]],
   ['epin_5fsize_153',['epin_size',['../structhidh__interface__t.html#aaeea57a75f677430aec957bce84a7b6c',1,'hidh_interface_t']]],
   ['epinfo_154',['epinfo',['../struct_t_u___a_t_t_r___p_a_c_k_e_d.html#a4593c47682d9b419211c952726fa60ce',1,'TU_ATTR_PACKED']]],
-  ['epinfo_5fbit_155',['epinfo_bit',['../struct_t_u___a_t_t_r___p_a_c_k_e_d.html#a6dae8e94cea2b85bdef478800181b0e2',1,'TU_ATTR_PACKED']]],
+  ['epinfo_5fbit_155',['epinfo_bit',['../struct_t_u___a_t_t_r___p_a_c_k_e_d.html#a328de5f22f6049ea686bee6f0860e550',1,'TU_ATTR_PACKED']]],
   ['epinuse_156',['EPINUSE',['../structdcd__registers__t.html#ab528f210f19c20a7e3bcb76eaaf5aae8',1,'dcd_registers_t']]],
   ['epliststart_157',['EPLISTSTART',['../structdcd__registers__t.html#aa6af1d8e606d48f8f542931e0cffccb2',1,'dcd_registers_t']]],
   ['epnum_158',['EPNUM',['../struct__ccrx__evenaccess.html#ad58b4d5dddf8f1f95355eba92a23fff5',1,'_ccrx_evenaccess']]],
