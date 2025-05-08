@@ -14,3 +14,5 @@ The following builds are available:
     - See https://github.com/Ultrawipf/OpenFFBoard/wiki/Pinouts-and-peripherals#f407-disco-pinout
     - No VBUS required
 * F411RE: FFBoard 1.0 (Only supports TMC driver!)
+* ESP32S3: Unofficial port
+	- doesnt support all features (limited by pins!)
