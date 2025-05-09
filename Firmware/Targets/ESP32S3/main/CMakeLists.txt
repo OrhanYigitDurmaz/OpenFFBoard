@@ -2,6 +2,14 @@
 # (im too embarrassed to say i accidentally deleted my
 # github commits and i didnt had a local copy)
 
+# a bit of walkthrough on overriding
+#cmake uses the first header it can find with the same names
+#but compile both source files so you need to define that out manually
+
+#--------------------- Header Overrides ---------------------#
+set(HEADER_OVERRIDES
+
+)
 
 #--------------------- OpenFFBoard Headers ---------------------#
 set(FFBOARD_HEADERS
@@ -167,7 +175,7 @@ set(TINYUSB_SOURCES
 #--------------------- Target Port Headers ---------------------#
 set(TARGET_HEADERS
     "."
-    "${IDF_PATH}/components/freertos/FreeRTOS-Kernel/include/freertos"
+    "${IDF_PATH}/components/freertos/FreeRTOS-Kernel/include/freertos" # freertos/FreeRTOS.h to FreeRTOS.h fix
 )
 
 #--------------------- Target Port Sources ---------------------#
@@ -180,4 +188,4 @@ set(TARGET_SOURCES
 
 #--------------------- Finally register everything ---------------------#
 idf_component_register(SRCS ${TARGET_SOURCES} ${FFBOARD_SOURCES} ${FFBOARD_USEREXT_SOURCES} ${TINYUSB_SOURCES}
-                    INCLUDE_DIRS ${TARGET_HEADERS} ${FFBOARD_HEADERS} ${FFBOARD_USEREXT_HEADERS} ${TINYUSB_HEADERS})
+                    INCLUDE_DIRS ${HEADER_OVERRIDES} ${TARGET_HEADERS} ${FFBOARD_HEADERS} ${FFBOARD_USEREXT_HEADERS} ${TINYUSB_HEADERS})
