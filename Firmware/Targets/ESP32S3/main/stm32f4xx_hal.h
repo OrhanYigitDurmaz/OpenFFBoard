@@ -340,3 +340,52 @@ typedef struct
   __IO uint32_t              ErrorCode;
 
 } SPI_HandleTypeDef;
+
+
+
+
+
+//--------------------- stm32f4xx_hal_uart ---------------------//
+
+typedef struct
+{
+  __IO uint32_t SR;
+  __IO uint32_t DR;
+  __IO uint32_t BRR;
+  __IO uint32_t CR1;
+  __IO uint32_t CR2;
+  __IO uint32_t CR3;
+  __IO uint32_t GTPR;
+} USART_TypeDef;
+
+typedef struct
+{
+  uint32_t BaudRate;
+  uint32_t WordLength;
+  uint32_t StopBits;
+  uint32_t Parity;
+  uint32_t Mode;
+  uint32_t HwFlowCtl;
+  uint32_t OverSampling;
+} UART_InitTypeDef;
+
+typedef struct
+{
+  USART_TypeDef                 *Instance;
+  UART_InitTypeDef              Init;
+  const uint8_t                 *pTxBuffPtr;
+  uint16_t                      TxXferSize;
+  __IO uint16_t                 TxXferCount;
+  uint8_t                       *pRxBuffPtr;
+  uint16_t                      RxXferSize;
+  __IO uint16_t                 RxXferCount;
+  //__IO HAL_UART_RxTypeTypeDef ReceptionType;
+  //__IO HAL_UART_RxEventTypeTypeDef RxEventType;
+  //DMA_HandleTypeDef             *hdmatx;
+  //DMA_HandleTypeDef             *hdmarx;
+  HAL_LockTypeDef               Lock;
+  //__IO HAL_UART_StateTypeDef    gState;
+  //__IO HAL_UART_StateTypeDef    RxState;
+  __IO uint32_t                 ErrorCode;
+
+} UART_HandleTypeDef;
