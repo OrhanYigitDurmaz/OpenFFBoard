@@ -99,20 +99,20 @@ extern volatile uint32_t ADC1_BUF[ADC1_CHANNELS]; // Buffer
 #define TEMPSENSOR_ADC_VAL ADC1_BUF[6] // ADC1 ch 7
 #define ADC_INTREF_VAL ADC1_BUF[7] // ADC1 ch 8.
 
-//extern ADC_HandleTypeDef hadc1;
-//#define AIN_HADC hadc1	// main adc for analog pins
-//#define ADC_PINS 6	// Amount of analog channel pins
-//#define ADC_CHAN_FPIN 0 // First analog channel pin. last channel = fpin+ADC_PINS-1
-//#define VOLTAGE_MULT_DEFAULT 30.12 // mV adc * scaler = voltage
+extern ADC_HandleTypeDef hadc1;
+#define AIN_HADC hadc1	// main adc for analog pins
+#define ADC_PINS 6	// Amount of analog channel pins
+#define ADC_CHAN_FPIN 0 // First analog channel pin. last channel = fpin+ADC_PINS-1
+#define VOLTAGE_MULT_DEFAULT 30.12 // mV adc * scaler = voltage
 
 #define BUTTON_PINS 8
 
-//extern SPI_HandleTypeDef hspi1;
-//#define HSPIDRV hspi1
-//extern SPI_HandleTypeDef hspi2;
-//#define HSPI2 hspi2
-//extern SPI_HandleTypeDef hspi3;
-//#define EXT3_SPI_PORT hspi3
+extern SPI_HandleTypeDef hspi1;
+#define HSPIDRV hspi1
+extern SPI_HandleTypeDef hspi2;
+#define HSPI2 hspi2
+extern SPI_HandleTypeDef hspi3;
+#define EXT3_SPI_PORT hspi3
 
 // CAN
 #ifdef CANBUS
