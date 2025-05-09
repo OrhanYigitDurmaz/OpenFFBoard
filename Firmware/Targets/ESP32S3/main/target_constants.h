@@ -16,7 +16,6 @@
 #define HW_TYPE "ESP32S3"
 #define HW_TYPE_INT 2
 #define FW_DEVID 0x413 // F407
-#define CAN1 //lets just assume esp32 has can peripheral instead of twai
 
 #include "main.h"
 
